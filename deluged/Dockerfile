@@ -22,6 +22,7 @@ VOLUME ~/Downloads
 
 # Deluge ports:
 # 58846: Access port
-EXPOSE 56646
+# 58850-58860: Torrent traffic
+EXPOSE 58850-58860 58846
 
 CMD deluged -d
