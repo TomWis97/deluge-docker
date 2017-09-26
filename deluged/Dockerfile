@@ -17,8 +17,8 @@ ENV ADMIN_PASSWD='Pa$$w0rd'
 # TODO: Set pasword here for now, should be moved to an initialisation script.
 RUN echo "admin:$ADMIN_PASSWD:10" >> ~/.config/deluge/auth
 
-VOLUME ~/.config/deluge
-VOLUME ~/Downloads
+VOLUME /home/deluge/.config/deluge
+VOLUME /home/deluge/Downloads
 
 # Deluge ports:
 # 58846: Access port
